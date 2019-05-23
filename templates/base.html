@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>baldwin portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
+    <a class="navbar-brand" href="#">MyFlaskApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/about-me">| About Me |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">| Contact Me |</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<br>
+<div class="jumbotron">
+    <h1>Welcome To My Flask Web Application!</h1>
+    <br>
+    <p>-My name is Edvinas and this is my very first and simple web application made with Python Flask framework.</p>
+    <p>-This application has its own database, cookies and hashed password features.<br>
+    <p>-You can create a new user account, edit and delete it.</p>
+    <p>-I have made a little game called "Guess The Secret Number" you can try it bellow.</p>
+    <p>-Please register below in order to start playing the game!</p>
+</div>
+<p>
+    <a href="/">Game</a> | <a href="/profile">Profile</a> | <a href="/users">Users</a>
+</p>
+
+{% block content %}
+{% endblock content %}
+
+</body>
+</html>
